@@ -1,6 +1,6 @@
 import 'package:ecommerce/ui/utils/app_color.dart';
+import 'package:ecommerce/ui/widget/reuseable_logo.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -19,11 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             const Spacer(),
             //logo
-            SvgPicture.asset(
-              "assets/images/logo.svg",
-              width: 120,
-              fit: BoxFit.scaleDown,
-            ),
+            ReUseAbleLogo(),
             const Spacer(),
             const SizedBox(
               height: 32,

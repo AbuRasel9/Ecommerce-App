@@ -1,3 +1,4 @@
+import 'package:ecommerce/ui/screens/email_auth_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'ui/screens/splash_screen.dart';
@@ -11,7 +12,7 @@ class CraftyBayApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: SplashScreen(),
+      home: EmailAuthScreen(),
       debugShowCheckedModeBanner: false,
     );
   }
