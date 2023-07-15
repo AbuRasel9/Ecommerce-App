@@ -37,6 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.2
 #  for get svg image
   flutter_svg: ^1.1.6
+#  for pin verification pin feild
+  pin_code_fields: ^8.0.1
+#  for state management
+  get: ^4.6.5
 
 dev_dependencies:
   flutter_test:

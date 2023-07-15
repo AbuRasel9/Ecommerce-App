@@ -4,15 +4,18 @@ import 'package:ecommerce/ui/widget/text_style.dart';
 import 'package:flutter/material.dart';
 
 class AppTextFeildWidget extends StatelessWidget {
+  final int? maxLine;
   final TextEditingController Controller;
   final String hintText;
   const AppTextFeildWidget({
-  super.key, required , required this.hintText, required this.Controller,
+  super.key, required , required this.hintText, required this.Controller, this.maxLine,
 });
 
 @override
 Widget build(BuildContext context) {
   return TextFormField(
+    //maxline it is null or not when null then get 1 otherwise given line
+      maxLines: maxLine ?? 1,
       controller: Controller,
       decoration: InputDecoration(
         hintText: hintText,
