@@ -49,16 +49,23 @@ class _EmailAuthScreenState extends State<EmailAuthScreen> {
                   "Please Enter Your Email Address",
                   style: subTitleTextStyle,
                 ),
-                const SizedBox(height: 15,),
+                const SizedBox(
+                  height: 15,
+                ),
                 //Text Form Feild get Reuseable widget
-                AppTextFeildWidget(Controller:TextEditingController(), hintText: "Email Address",),
+                AppTextFeildWidget(
+                  Controller: TextEditingController(),
+                  hintText: "Email Address",
+                ),
 
                 const SizedBox(
                   height: 20,
                 ),
                 //button
                 ReUseAbleElevatedButton(
-                  onTap: () {Get.to(VeryfyOtpScreen());},
+                  onTap: () {
+                    Get.to(VeryfyOtpScreen());
+                  },
                   text: "Next",
                 )
               ],
@@ -69,4 +76,3 @@ class _EmailAuthScreenState extends State<EmailAuthScreen> {
     );
   }
 }
-

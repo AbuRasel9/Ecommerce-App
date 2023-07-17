@@ -1,4 +1,4 @@
-import 'package:ecommerce/ui/utils/app_color.dart';
+import 'package:ecommerce/ui/screens/main_bottom_navigation_bar.dart';
 import 'package:ecommerce/ui/widget/app_elevated_button.dart';
 import 'package:ecommerce/ui/widget/app_textfeild_widget.dart';
 import 'package:ecommerce/ui/widget/reuseable_logo.dart';
@@ -85,9 +85,9 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
                 //button
                 ReUseAbleElevatedButton(
                   onTap: () {
-                    Get.to(const CompleteProfileScreen());
+                    Get.offAll(const MainBootomNavigationBar());
                   },
-                  text: "Next",
+                  text: "Complete",
                 ),
               ],
             ),
