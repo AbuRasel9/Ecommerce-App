@@ -44,6 +44,8 @@ dependencies:
 
 #for carosel_slidder
   carousel_slider: ^4.2.1
+# for product increment decrement
+  number_inc_dec: ^0.8.0
 
 dev_dependencies:
   flutter_test:

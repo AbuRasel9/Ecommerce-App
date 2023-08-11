@@ -1,4 +1,6 @@
+import 'package:ecommerce/ui/screens/categoryScreen.dart';
 import 'package:ecommerce/ui/screens/home_screens.dart';
+import 'package:ecommerce/ui/screens/product_screen.dart';
 import 'package:ecommerce/ui/utils/app_color.dart';
 import 'package:ecommerce/ui/widget/categoryItems.dart';
 import 'package:ecommerce/ui/widget/home/homeBannerSlidder.dart';
@@ -6,6 +8,7 @@ import 'package:ecommerce/ui/widget/home/sectionHeader.dart';
 import 'package:ecommerce/ui/widget/productItemPreviewCard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -100,7 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
               //carousel_slider and banner
               HomeBannerSlidder(),
               //section headder
-              SectionHeader(headerTitle: "All Categories ", onTapSeeAll: () {}),
+              SectionHeader(headerTitle: "All Categories ", onTapSeeAll: () {Get.to(const ProductCategoryScreen());}),
               //Categori item part
               SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
@@ -144,8 +147,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               //List of populler item part
-              SectionHeader(headerTitle: "Popular", onTapSeeAll: () {}),
-              SingleChildScrollView(
+              SectionHeader(headerTitle: "Popular", onTapSeeAll: () {Get.to(const ProductListScreen());}),
+              const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
@@ -164,8 +167,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
               //Special section
-              SectionHeader(headerTitle: "Special", onTapSeeAll: () {}),
-              SingleChildScrollView(
+              SectionHeader(headerTitle: "Special", onTapSeeAll: () {Get.to(const ProductListScreen());}),
+              const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [
@@ -185,8 +188,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
               //new Section
-              SectionHeader(headerTitle: "New", onTapSeeAll: () {}),
-              SingleChildScrollView(
+              SectionHeader(headerTitle: "New", onTapSeeAll: () {Get.to(const ProductListScreen());}),
+              const SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   children: [

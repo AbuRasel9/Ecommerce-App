@@ -1,6 +1,8 @@
 import 'package:ecommerce/ui/getx/bottom_navigation_controller.dart';
+import 'package:ecommerce/ui/screens/cart_screen.dart';
 import 'package:ecommerce/ui/screens/categoryScreen.dart';
 import 'package:ecommerce/ui/screens/home_screens.dart';
+import 'package:ecommerce/ui/screens/wish_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -18,8 +20,8 @@ class _MainBootomNavigationBarState extends State<MainBootomNavigationBar> {
     const HomeScreen(),
     const ProductCategoryScreen(),
 
-    const ProductCategoryScreen(),
-    const ProductCategoryScreen(),
+    const CartScreen(),
+    const WishListScreen(),
   ];
   @override
   Widget build(BuildContext context) {

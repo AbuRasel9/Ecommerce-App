@@ -2,7 +2,6 @@ import 'package:ecommerce/ui/screens/email_auth_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'ui/screens/splash_screen.dart';
 
 void main(){
   runApp(const CraftyBayApp());
