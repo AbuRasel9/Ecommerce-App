@@ -18,6 +18,8 @@ class HomeBannerSlidder extends StatelessWidget {
           carouselController: _CarouselController,
           //viewportFraction used for image show full width in carousel
           options: CarouselOptions(
+            autoPlay: true,
+              reverse: false,
               height: 180.0,
               viewportFraction: 1,
               onPageChanged: (index, _) {
